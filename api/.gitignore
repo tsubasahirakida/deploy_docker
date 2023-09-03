@@ -1,36 +1,42 @@
-# .gitignore for Rails
-*.rbc
-*.sassc
-.sass-cache
-capybara-*.html
-.rspec
+# Ignore bundler config.
 /.bundle
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/public/system/
-/coverage/
-/spec/tmp
-**.orig
-rerun.txt
-pickle-email-*.html
-/config/master.key
 
-# Ignore dotenv files
-.env
-.env.*
+# Ignore the specific database config file.
+/config/database.yml
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/log/*.log
+/tmp
 
-# Ignore node_modules
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
+# Ignore bundler gems.
+/vendor/bundle
+
+# Ignore application's specific configuration file
+/config/credentials.yml.enc
+/config/master.key
+
+# Ignore files related to IDE
+/.vscode
+/.idea/
+/.rubymine*
+/.ruby-version
+/.ruby-gemset
+
+# Ignore node modules
 /node_modules
 
-# Ignore precompiled assets
+# Ignore precompiled assets for production environment
 /public/assets
 
-# Ignore uploaded files in development
-/storage/*
-!/storage/.keep
+# Ignore SQLite database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
