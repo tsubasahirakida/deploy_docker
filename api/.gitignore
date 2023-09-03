@@ -1,0 +1,35 @@
+# .gitignore for Rails
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system/
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# Ignore dotenv files
+.env
+.env.*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore node_modules
+/node_modules
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
