@@ -13,6 +13,7 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+config/master.key
 
 # Ignore dotenv files
 .env
